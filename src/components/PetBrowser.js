@@ -4,7 +4,6 @@ import Pet from './Pet'
 class PetBrowser extends React.Component {
 
   render() {
-    console.log('petBrowser')
     const petCards = this.props.pets.map(pet => (
       <Pet pet={pet} key={pet.id} onAdoptPet={this.props.onAdoptPet} />
     ))
